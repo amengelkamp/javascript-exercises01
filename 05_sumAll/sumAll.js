@@ -4,7 +4,7 @@ const sumAll = function(beginningnumber, endingnumber) {
     console.log("Die beginningnumber ist " +  beginningnumber);
     console.log("Die endingnumber ist " + endingnumber);
     for (let i = beginningnumber; i <= endingnumber; i++) { 
-        sumbetween = beginningnumber + 1;
+        sumbetween = beginningnumber + i;
         console.log("Die sumbetween ist " + sumbetween);
         console.log("i ist gleich " + (i));
     }
@@ -12,9 +12,6 @@ const sumAll = function(beginningnumber, endingnumber) {
     const newSum = beginningnumber + sumbetween + endingnumber;
 
     
-
-   
-
 
     return newSum;
 
