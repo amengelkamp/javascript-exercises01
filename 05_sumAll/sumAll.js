@@ -8,6 +8,21 @@ const sumAll = function(beginningnumber, endingnumber) {
     if (beginningnumber > endingnumber) {
         [beginningnumber, endingnumber] = [endingnumber, beginningnumber]; 
     }
+
+    if (beginningnumber < 0) {
+        return newSum = "ERROR";
+    }
+
+    if (!Number.isInteger(beginningnumber)) {
+        return newSum = "ERROR";
+    }
+
+    if (typeof (endingnumber) != typeof 0) { 
+        return newSum = "ERROR";
+    }
+
+
+
     for (let i = beginningnumber; i <= endingnumber; i++) { 
         newSum += i;
 
@@ -18,7 +33,7 @@ const sumAll = function(beginningnumber, endingnumber) {
 
 };
 
-console.log("Testcase 1 - sums numbers within the range: Die finale Summe lautet " + sumAll(123, 1));
+console.log("Testcase 1 - sums numbers within the range: Die finale Summe lautet " + sumAll(10, "90"));
 
 
 // Do not edit below this line
