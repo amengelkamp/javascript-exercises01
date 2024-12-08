@@ -1,25 +1,26 @@
 const convertToCelsius = function(Fahrenheit) {
 
-  //Umrechnung Fahrenheit in Celsius: °C = (°F - 32) * 5/9 
   console.log(Fahrenheit);
   let Celsius = (Fahrenheit - 32) * 5/9;
-
-  return Celsius;
+  return Math.round(Celsius * 10) / 10;
 };
 
 
-console.log("Celsius ist umgerechnet " + convertToCelsius(32));
-
-
-//Fahrenheit to Celsius 
-//x °C ≘ (x × ⁠9/5⁠ + 32) °F 
+console.log("Celsius ist umgerechnet " + convertToCelsius(100));
 
 
 const convertToFahrenheit = function(Celsius) {
+  console.log(Celsius);
+  let Fahrenheit = Celsius * 1.8 + 32;
+  return Math.round(Fahrenheit * 10) / 10;
 };
 
-//Celsius to Fahrenheit
-//x °F ≘ (x − 32) × ⁠5/9⁠ °C
+/*
+
+*/
+console.log("Fahrenheit ist umgerechnet " + convertToFahrenheit(0));
+
+
 
 // Do not edit below this line
 module.exports = {
